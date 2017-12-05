@@ -1,10 +1,7 @@
 [
   { "name": "testapp" },
   { "name": "ez-game" },
-  { "name": "magnets" },
   { "name": "reverse-proxy", "pm2": "proxy" },
-  { "name": "mdb-full-project", "bash": "npm run build" },
-  { "name": "scraping-test" },
-  { "name": "testapp", "branch": "dev" },
+  { "name": "scraping-test", "pm2": "scraping" },
   { "name": "git-auto" }
 ]
