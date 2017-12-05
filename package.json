@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/DennisMajvall/git-auto#readme",
   "dependencies": {
-    "nodegit": "^0.20.3",
     "promisemaker": "^0.1.3",
     "simple-git": "^1.84.0"
   }
