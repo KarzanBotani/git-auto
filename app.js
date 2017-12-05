@@ -85,7 +85,7 @@ async function update(r){
 
 async function start(){
   await fixJSON();
-  const logTime = true; // Edit this to see the duration of the actions.
+  const logTime = false; // Edit this to see the duration of the actions.
 
   async function updateAll(){
     logTime && console.time('Updating repos');
