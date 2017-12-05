@@ -1,0 +1,35 @@
+[
+  {
+    "___WARNING": "This object uses incorrect JSON and only exists for descriptive purposes.",
+
+    "name": "testapp", // REQUIRED, name of the project-folder
+
+    // "branch"   OPTIONAL, default: "master"
+    "branch": "dev", // will do a git pull on the specified branch instead.
+
+    // The following settings will run in the order they are listed below.
+
+    // "npm install"   OPTIONAL, default: will do "npm install"
+    "npm install": false, // disable automatic "npm install"
+
+    // "bash"   OPTIONAL, default: nothing extra happens.
+    "bash": "npm run build", // will run this command in bash (before pm2 restart - if any)
+    "bash": ["npm compile-scss", "npm run build"], // same as above but plural.
+
+    // "pm2"   OPTIONAL, default: will do "pm2 restart <name>" (e.g testapp)
+    "pm2": false, // disable automatic "pm2 restart"
+    "pm2": "nice-name" // will do "pm2 restart nice-name" instead of "pm2 restart <name>"
+  },
+
+  { "name": "testapp" },
+  { "name": "ez-game" },
+  { "name": "magnets", "pm2": false },
+  { "name": "reverse-proxy", "pm2": "proxy" },
+  {
+    "name": "mdb",
+    "bash": ["npm install", "npm run build"]
+  },
+  { "name": "scraping-test", "pm2": "scraping" },
+  { "name": "testapp", "branch": "dev" },
+  { "name": "git-auto" }
+]

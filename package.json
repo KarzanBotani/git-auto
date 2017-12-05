@@ -1,0 +1,25 @@
+{
+  "name": "git-auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DennisMajvall/git-auto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DennisMajvall/git-auto/issues"
+  },
+  "homepage": "https://github.com/DennisMajvall/git-auto#readme",
+  "dependencies": {
+    "nodegit": "^0.20.3",
+    "promisemaker": "^0.1.3",
+    "simple-git": "^1.84.0"
+  }
+}
