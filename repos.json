@@ -1,7 +1,7 @@
 [
-  { "name": "testapp" },
-  { "name": "ez-game" },
+  { "name": "portfolio" },
+  { "name": "crypto-monitor" },
   { "name": "reverse-proxy", "pm2": "proxy" },
-  { "name": "scraping-test", "pm2": "scraping" },
+  { "name": "certbot-helper", "pm2": "scraping" },
   { "name": "git-auto" }
 ]
