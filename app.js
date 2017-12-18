@@ -6,7 +6,6 @@ const path = require("path"),
       fs = require('fs'),
       exec = pm(require('child_process')).exec;
 
-
 let repos = require('./repos.json');
 async function fixJSON(){
   for (let i = 0; i < repos.length; ++i) {
@@ -23,7 +22,6 @@ async function fixJSON(){
     repos[i] = Object.assign({}, { branch: 'master', "npm install": true }, repos[i]);
   }
 }
-
 
 async function getCurrentBranch(r){
   return (await r.repo.branch()).current;
@@ -81,8 +79,6 @@ async function update(r){
   }
 }
 
-
-
 async function start(){
   await fixJSON();
   const logTime = false; // Edit this to see the duration of the actions.
@@ -99,4 +95,5 @@ async function start(){
 
   updateAll();
 }
+
 start();

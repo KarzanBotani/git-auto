@@ -1,7 +1,8 @@
 [
   { "name": "portfolio" },
   { "name": "crypto-monitor" },
-  { "name": "reverse-proxy", "pm2": "proxy" },
-  { "name": "certbot-helper", "pm2": "scraping" },
+  { "name": "scraper-example" },
+  { "name": "reverse-proxy" },
+  { "name": "certbot-helper" },
   { "name": "git-auto" }
 ]
